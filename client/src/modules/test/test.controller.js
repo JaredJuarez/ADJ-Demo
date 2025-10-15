@@ -5,7 +5,7 @@ const API_URL = `http://${ENV.VITE_API_HOST}:${ENV.VITE_API_PORT}/${ENV.VITE_API
 
 TestController.callToAPI = async () => {
    console.log('Llamando a la API...' + "" + API_URL)
- await fetch(`${API_URL}`,{
+ await fetch(`${API_URL}/test`,{
     method: 'GET',
     headers: {
      'Content-Type': 'application/json',
