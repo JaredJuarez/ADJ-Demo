@@ -1,6 +1,6 @@
 services:
   database:
-    image: mysql:8.0
+    image: mysql:8
     container_name: mysql_database
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -18,9 +18,9 @@ services:
     build:
       context: ./client
       args:
-        API_HOST: backend
-        API_PORT: 8080
-        API_BASE: /adj-api
+        API_HOST: localhost
+        API_PORT: 8081
+        API_BASE: adj-api
     container_name: adj-client
     ports:
       - "3000:80"

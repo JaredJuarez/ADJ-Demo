@@ -1,7 +1,7 @@
 const TestController = {}
 const ENV = import.meta.env
 
-const API_URL = `http://${ENV.VITE_API_HOST}:${ENV.VITE_API_PORT}/${ENV.VITE_API_BASE_URL}`
+const API_URL = `http://${ENV.VITE_API_HOST}:${ENV.VITE_API_PORT}/${ENV.VITE_API_BASE}`
 
 TestController.callToAPI = async () => {
    console.log('Llamando a la API...' + "" + API_URL)
